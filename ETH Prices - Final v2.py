@@ -20,7 +20,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # Download data using Yahoo Finance API
-api_key = '9BTZQJA8HHVIH64EMVXJ2M4C9XH16KT5W5'
+api_key = API_KEY
 symbol_data = ['ETH-USD', 'Ethereum']
 df = yfinance.download(symbol_data[0], '2021-06-01', '2023-07-30')
 
