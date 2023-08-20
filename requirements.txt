@@ -1,0 +1,10 @@
+yfinance
+datetime
+pandas
+matplotlib.pyplot
+numpy
+statsmodels
+math
+sklearn.metrics
+sklearn.model_selection
+tensorflow
