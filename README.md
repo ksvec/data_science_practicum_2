@@ -11,6 +11,7 @@ The code downloads historical price data, performs exploratory data analysis (ED
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+  - [Requirements](#requirements)
 - [Usage](#usage)
   - [ARIMA Model](#arima-model)
   - [LSTM Model](#lstm-model)
@@ -41,6 +42,30 @@ git clone https://github.com/ksvec/data_science_practicum2.git
 ```bash
 pip install -r requirements.txt
 ```
+
+### Requirements
+#### yfinance
+  - This library is used to download historical price data for Ethereum (ETH) from Yahoo Finance.
+#### datetime
+  - It's a built-in Python module used to work with dates and times. In your script, it's used to handle date-related operations.
+#### pandas
+  - Pandas is a powerful data manipulation and analysis library. In your script, it's used to store and manipulate data, especially for creating dataframes.
+#### matplotlib.pyplot
+  - This library is used for creating data visualizations such as line charts and plots.
+#### numpy
+  - NumPy is used for numerical operations and array manipulations.
+#### statsmodels
+  - Statsmodels is a library for estimating and interpreting statistical models. In your script, it's used for implementing the ARIMA model.
+#### math
+  - The built-in math module provides mathematical functions. In your script, it's used for mathematical operations.
+#### sklearn.metrics
+  - This library provides various metrics for evaluating the performance of machine learning models. In your script, it's used to calculate RMSE (Root Mean Squared Error) and MAPE (Mean Absolute Percentage Error).
+#### sklearn.model_selection
+  - This library provides tools for model selection and evaluation, including train-test splits. In your script, it's used for splitting the data into training and testing sets.
+#### tensorflow
+  - TensorFlow is an open-source machine learning framework. In your script, it's used for building and training LSTM (Long Short-Term Memory) models for time-series forecasting.
+#### pandas_profiling (commented out)
+  - This library generates an EDA (Exploratory Data Analysis) report for your dataset. In your script, it's not used but seems to be included in comments.
 
 ## Usage
 ### ARIMA Model
