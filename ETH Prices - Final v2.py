@@ -15,7 +15,7 @@ from tensorflow.python.keras.models import Sequential
 from tensorflow.python.keras.layers import LSTM, Dense
 from statsmodels.tsa.api import SimpleExpSmoothing
 
-#Suppress/ignore warnings
+# Suppress/ignore warnings
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -295,7 +295,7 @@ mape = mean_absolute_percentage_error(test, test_concat)
 
 rmse_mape_results.append(['EMA', rmse, mape])
 
-#Create dataframe with various model RMSE and MAPE values
+# Create dataframe with various model RMSE and MAPE values
 df = pd.DataFrame(rmse_mape_results, columns = ['Model', 'RMSE', 'MAPE'])
 df.sort_values(by='RMSE', ascending=False, inplace=True)
 print('\n')
